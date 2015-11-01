@@ -1,0 +1,10 @@
+BEGIN {
+}
+
+{
+	if($6 == "cwnd_")
+		printf("\n %f\t%f",$1,$7);
+}
+END {
+	puts "DONE"
+}		

@@ -1,0 +1,14 @@
+BEGIN 
+{
+  count=0;
+}
+
+{
+  if($1 == "d")
+	count++;
+}
+
+END 
+{
+  printf("\n total packets dropped %d\n",count);
+}
